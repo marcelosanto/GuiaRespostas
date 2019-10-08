@@ -13,8 +13,23 @@
   <hr />
   <p>perguntas</p>
 
-  <%= nome %>
-  <%= lang %>
-</body>
+  <!-- = é usado somente quando for usar variavel  -->
+  <p>Nome: <%= nome %></p>
+  <p>Linguagem: <%= lang %></p>
+  <p>Empresa: <%= empresa %></p>
 
+  <% if(msg){%>
+  <h3>Isso é uma msg de erro</h3>
+  <%}else{%>
+  <h3>Sem erros</h3>
+  <%}%>
+
+  <% produtos.forEach(function(produto){%>
+    <hr />
+    <p>Nome: <%= produto.nome %></p>
+    <p>Preço: <%= produto.preco %></p>
+    
+  <%})%>
+
+</body>
 </html>
