@@ -4,7 +4,12 @@ const app = express()
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-  res.render('index')
+  const nome = 'Marcello'
+  const lang = 'Javascript'
+  res.render('index', {
+    nome,
+    lang
+  })
 })
 
 app.listen(8080, () => {
