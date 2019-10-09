@@ -6,30 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Guia perguntas</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <h1>Guia perguntas!</h1>
-  <hr />
-  <p>perguntas</p>
-
-  <!-- = é usado somente quando for usar variavel  -->
-  <p>Nome: <%= nome %></p>
-  <p>Linguagem: <%= lang %></p>
-  <p>Empresa: <%= empresa %></p>
-
-  <% if(msg){%>
-  <h3>Isso é uma msg de erro</h3>
-  <%}else{%>
-  <h3>Sem erros</h3>
-  <%}%>
-
-  <% produtos.forEach(function(produto){%>
-    <hr />
-    <p>Nome: <%= produto.nome %></p>
-    <p>Preço: <%= produto.preco %></p>
-    
-  <%})%>
-
 </body>
 </html>
